@@ -1,0 +1,946 @@
+{
+	"title": "Initial cloud assessment",
+	"questions": [
+		{
+			"id": "4fac0106-2062-3a12-3c7c-d2091363e277",
+			"label": "Please confirm that this Application is still hosted on-premise",
+			"type": "radio",
+			"options": [
+				{
+					"id": "94456239-256d-58d9-6793-85f37f4c9c72",
+					"label": "yes"
+				},
+				{
+					"id": "4ea565c5-bf8b-8850-0e32-805ac4f6ff36",
+					"label": "no"
+				}
+			],
+			"powerfeature": false
+		},
+		{
+			"id": "2e7f1be8-a350-7951-b5f6-ab8fbcbcba41",
+			"label": "1. Ensure Application master data is filled correctly",
+			"type": "group",
+			"children": [
+				{
+					"id": "88e835ba-9733-4310-acf8-5200afa6b23a",
+					"label": "Please make sure that the Application Lifecycle is up-to-date",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": true,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": true,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": false,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": false,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": "8093f89d-ed3d-e60f-51fc-beb7af621a0e",
+					"label": "Please make sure that Business Criticality and Functional Fit is up-to-date",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": false,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": true,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": true,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": true,
+								"subsection.technicalSuitability": {
+									"selected": true,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": "6b40a8b2-a998-e5f2-9952-fafd7f6680d2",
+					"label": "Please make sure to have User Groups filled correctly",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": false,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": true,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": true,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": false,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": "64ed55d7-75ba-9fff-555d-77f25fe9bdaf",
+					"label": "Please make sure that the used data objects are up-to-date",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"isConditional": true,
+						"fsSections": {
+							"section.information": {
+								"section": false,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": false,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": true,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": true,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": false,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						},
+						"dependency": {
+							"parentId": "4fac0106-2062-3a12-3c7c-d2091363e277",
+							"condition": {
+								"op": "||",
+								"args": [
+									{
+										"op": "==",
+										"args": [
+											[
+												0
+											],
+											"yes"
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": "71476d36-b6dc-5323-043e-817bc86324c2",
+					"label": "Please make sure that the required technology is up-to-date",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": false,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": false,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": true,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": true,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				}
+			],
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"isConditional": true,
+				"dependency": {
+					"parentId": "4fac0106-2062-3a12-3c7c-d2091363e277",
+					"condition": {
+						"op": "||",
+						"args": [
+							{
+								"op": "==",
+								"args": [
+									[
+										0
+									],
+									"yes"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "d83d9f4b-25ca-362e-74d4-0091df18daa5",
+			"label": "2. Technology Requirements",
+			"type": "group",
+			"children": [
+				{
+					"id": "31e9d28f-e776-ed56-6cd0-6ddca4784dba",
+					"label": "Please give an estimate on daily users",
+					"type": "radio",
+					"options": [
+						{
+							"id": "ae6b30ff-0ea3-33d7-e516-e1cfcd0e4210",
+							"label": "&lt; 10"
+						},
+						{
+							"id": "589d7a7f-7520-c7ed-16dc-4d671d4ef6a9",
+							"label": "10 - 100"
+						},
+						{
+							"id": "a5924df1-8aa3-50cb-de88-1ca1fbcc8100",
+							"label": "&gt; 100"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "c59aa2cd-775b-f623-59a3-14a9a2da4aa5",
+					"label": "Please give the required SLA",
+					"type": "radio",
+					"options": [
+						{
+							"id": "ef57a700-75ba-0aa5-c66e-f5efe45a0663",
+							"label": "Gold"
+						},
+						{
+							"id": "940592a7-3fb1-880c-05e7-c2d1169d0a3c",
+							"label": "Silver"
+						},
+						{
+							"id": "be451291-9bb2-ff1d-0fda-67af5271f33e",
+							"label": "Bronze"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "8fef6542-f42f-eacb-5569-d22debea52a6",
+					"label": "Has their already been an evaluation regarding Containerization?",
+					"type": "radio",
+					"options": [
+						{
+							"id": "f921f93a-8fc3-25ce-f9f2-735ab7950709",
+							"label": "Yes, runs on Docker"
+						},
+						{
+							"id": "6afc99c3-a9b9-dcb4-ae87-b5f5af589d72",
+							"label": "Yes, can be adapted easily"
+						},
+						{
+							"id": "e8be2b18-07d0-3270-f3fd-c38524b17d67",
+							"label": "Yes, takes serious effort to adapt"
+						},
+						{
+							"id": "8756275e-2e0c-a1e1-ea0e-bce14e634f43",
+							"label": "No"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "fd0e124b-09f5-2121-a49a-3d7cb84840c8",
+					"label": "Please give any requirements regarding Identify &amp; Access Management",
+					"type": "text",
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"isConditional": true,
+				"dependency": {
+					"parentId": "4fac0106-2062-3a12-3c7c-d2091363e277",
+					"condition": {
+						"op": "||",
+						"args": [
+							{
+								"op": "==",
+								"args": [
+									[
+										0
+									],
+									"yes"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "f54257d6-38c3-efbf-ab6a-726bdb0e9ae6",
+			"label": "3. Legal Requirements",
+			"type": "group",
+			"children": [
+				{
+					"id": "407eeebc-8c88-7cdd-8815-68eb259a3b78",
+					"label": "Which certificates are required to run this application?",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "8edf84ae-25e0-5609-1791-bcc6242b5406",
+					"label": "Are there legal requirements where the data can be hosted?",
+					"type": "text",
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"isConditional": true,
+				"dependency": {
+					"parentId": "4fac0106-2062-3a12-3c7c-d2091363e277",
+					"condition": {
+						"op": "||",
+						"args": [
+							{
+								"op": "==",
+								"args": [
+									[
+										0
+									],
+									"yes"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "8a0ba877-1500-51cd-268b-4d73ad5065cd",
+			"label": "Update hosting information",
+			"type": "group",
+			"children": [
+				{
+					"id": "d0ca8e1a-0791-5152-34e3-e8482012a20e",
+					"label": "Please make sure that technical information are up to date. Important: Please also set the \"Hosting\" tag correctly",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": false,
+								"subsection.nameDescription": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": false,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": true,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": true,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				}
+			],
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"isConditional": true,
+				"dependency": {
+					"parentId": "4fac0106-2062-3a12-3c7c-d2091363e277",
+					"condition": {
+						"op": "||",
+						"args": [
+							{
+								"op": "==",
+								"args": [
+									[
+										0
+									],
+									"no"
+								]
+							}
+						]
+					}
+				}
+			}
+		}
+	],
+	"factSheetType": "Application"
+}
