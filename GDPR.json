@@ -1,0 +1,576 @@
+{
+	"title": "GDPR Survey",
+	"questions": [
+		{
+			"id": "200443f3-70e4-352f-9d66-7861b17f36c1",
+			"label": "1. Responsible for Data Processing",
+			"type": "group",
+			"children": [
+				{
+					"id": "d97af010-947f-1fbb-7678-cb10508db581",
+					"label": "Data Controller: Full Name",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "62bf4d51-2ebe-e1c5-187c-4fc6a7b46af2",
+					"label": "Data Controller: Email",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "4369d2b5-40f2-4402-9e94-51e744f9f4c0",
+					"label": "Data Controller: Contact Phone and Address",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "f74d421a-050e-ad00-feab-884698cc1d3c",
+					"label": "Joint Data Controller: Full Name and Contact Information",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "402e9f7f-919f-11c0-a819-fcbbff03dcd9",
+					"label": "Representative of Data Controller: Full Name",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "c618ba39-cd90-5cdd-e7ab-9f2ad1202ee1",
+					"label": "Data Protection Officer: Full Name",
+					"type": "text",
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "e1ea9257-4461-be93-513d-074545c0a1c8",
+			"label": "2. Data Processing Activities",
+			"type": "group",
+			"children": [
+				{
+					"id": "7f5bd595-0549-a1a8-9540-3dad85772772",
+					"label": "2a. Scope of Processing Activities",
+					"type": "radio",
+					"options": [
+						{
+							"id": "927dfaf8-227a-aeb5-2a4c-ad7e83ed97cf",
+							"label": "Standard Software or Database&amp;NBSP"
+						},
+						{
+							"id": "1bb1e94b-52a9-f540-6e22-e6463e4d2f62",
+							"label": "Customized Software"
+						},
+						{
+							"id": "4f12b1fb-6e42-b438-0ec0-68facf5304ce",
+							"label": "To other systems or international organizations occur?"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "9e968d58-578f-a9fe-813f-4cff3bf51501",
+					"label": "If \"Customized Software\" selected, please add a short description of the system:",
+					"type": "text",
+					"powerfeature": false,
+					"settings": {
+						"isConditional": true,
+						"dependency": {
+							"parentId": "d97af010-947f-1fbb-7678-cb10508db581",
+							"condition": {
+								"op": "||",
+								"args": [
+									{
+										"op": "==",
+										"args": [
+											[
+												0
+											],
+											"Customized Software"
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": "8908f1b1-235e-50c4-cbee-d2b0b502bc2b",
+					"label": "If transfers of personal data to other systems or organizations occurs, list them here:",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "b43f01f1-3540-b7fc-b7f6-70f4b3ec9d1d",
+					"label": "2b. On what legal basis is data processing happening?",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "35d3cfed-ce17-b689-d152-5a2582739723",
+							"label": "Consent of the data subject"
+						},
+						{
+							"id": "cbf391f4-9cbf-00d4-0cb2-169d0ac51ae7",
+							"label": "Performance of a contract or entering into a contract"
+						},
+						{
+							"id": "7f39e50a-f48c-53da-3c55-db3e05fe6930",
+							"label": "Employment Relationship"
+						},
+						{
+							"id": "15e6b91f-ba90-cd49-d4ed-fa066042e7c9",
+							"label": "Necessary for legal compliance / legal obligation"
+						},
+						{
+							"id": "c57edeed-a227-f045-316f-d2d097eee6ac",
+							"label": "Necessary to protect interests of the data subject or another person"
+						},
+						{
+							"id": "7e07fd54-7e4a-dbea-35e4-9b71a2fea132",
+							"label": "Necessary for performance of a task carried out in the public interester"
+						},
+						{
+							"id": "0daeb948-831d-1420-bbc2-e9d8c501c709",
+							"label": "Balancing of interests"
+						},
+						{
+							"id": "5941c554-8d82-a883-b5f6-99c997c047a2",
+							"label": "Agreement of Works Council (if needed)"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "522af1e1-4e82-6fff-aa00-441174b4d264",
+					"label": "2c. Data Protection Impact Assessment",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "65e1ae62-890e-563e-56ca-5c7ebdcbff64",
+							"label": "Required"
+						},
+						{
+							"id": "33c1c713-2f8e-154f-7821-6902f0466589",
+							"label": "Not Required"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "ee8a395e-588f-f102-82da-24c1cd91a13e",
+					"label": "If \"Required\" chosen, describe the necessary actions:",
+					"type": "textarea",
+					"powerfeature": false,
+					"settings": {
+						"isConditional": true,
+						"dependency": {
+							"parentId": "522af1e1-4e82-6fff-aa00-441174b4d264",
+							"condition": {
+								"op": "||",
+								"args": [
+									{
+										"op": "==",
+										"args": [
+											[
+												0
+											],
+											"Required"
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": "566b7826-ab43-f2a5-eac5-e89b1e380b59",
+					"label": "2d. Categories of Data Subjects",
+					"type": "radio",
+					"options": [
+						{
+							"id": "22460237-6517-b4d7-1553-21fcbfa9d3d3",
+							"label": "Customers"
+						},
+						{
+							"id": "e16d92d9-0800-f868-68ee-e20d56a0bc28",
+							"label": "Employees"
+						},
+						{
+							"id": "309e715f-e7ef-5cc0-6fb6-527ef13418b8",
+							"label": "Of Suppliers"
+						},
+						{
+							"id": "87cb39d2-3f59-805c-7b7e-d620e82461d6",
+							"label": "Applicants for Employment&amp;NBSP"
+						},
+						{
+							"id": "706754ca-105d-46f9-efc7-859ce8903323",
+							"label": "Employees of Service Providers"
+						},
+						{
+							"id": "1dd3f870-8b8e-830a-cc85-7bb51aaba6b6",
+							"label": "Others"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "427e3c85-c5dc-49c2-289a-ad74c1d3985b",
+					"label": "If \"Others\" chosen, specify those data subjects:",
+					"type": "textarea",
+					"powerfeature": false,
+					"settings": {
+						"isConditional": true,
+						"dependency": {
+							"parentId": "566b7826-ab43-f2a5-eac5-e89b1e380b59",
+							"condition": {
+								"op": "||",
+								"args": [
+									{
+										"op": "==",
+										"args": [
+											[
+												0
+											],
+											"Others"
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"id": "2abf6ab0-9bfb-f666-68ec-f9e99d335592",
+					"label": "2e. Categories of Personal Data",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "d6f72ac5-e6a2-c92a-fe30-1f18f9d87b79",
+							"label": "Sales and Order Data"
+						},
+						{
+							"id": "5aed1de4-63fc-b04c-f714-7010af7c24c0",
+							"label": "Name, Address"
+						},
+						{
+							"id": "211e8538-c43a-70f6-e9e4-4b385889c680",
+							"label": "Name, Address&amp;NBSP"
+						},
+						{
+							"id": "413aaf44-32b9-c70b-56bd-3382f95ca561",
+							"label": "Payment (banking) details"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "1c03f760-dd5e-0d65-67ec-bb1f1c86f724",
+					"label": "2f. Are any special categories of personal data involved in processing?",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "3058525f-ab2d-fcea-9119-bfc00ec74d32",
+							"label": "Health related data"
+						},
+						{
+							"id": "16a24fd0-fc4d-908a-deca-f5d7e6e16ef6",
+							"label": "Generic Data"
+						},
+						{
+							"id": "af1289aa-6fc3-c317-fb9e-f7e230636d37",
+							"label": "Biometric Data"
+						},
+						{
+							"id": "c7190db2-2957-e461-490d-0b6c3b1074de",
+							"label": "Data or racial or ethnic origin"
+						},
+						{
+							"id": "54e98f98-06fc-0883-73f8-2054cc316800",
+							"label": "Data on political opinions"
+						},
+						{
+							"id": "085ec48c-fcf6-46e6-d0c9-2230db87fe86",
+							"label": "Data on religious or philosophical beliefs"
+						},
+						{
+							"id": "7abacc89-221d-cb8d-90dc-6eba6f6caadc",
+							"label": "Data on trade-union membership"
+						},
+						{
+							"id": "42eace63-c5a4-f836-5bd1-9d36b0578b2e",
+							"label": "Data on sex life or sexual orientation"
+						}
+					],
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "cc5c373b-53db-9817-112f-c836fb78c107",
+			"label": "3. Data Transfer: Data Recipient Categories",
+			"type": "group",
+			"children": [
+				{
+					"id": "2b8ab0a3-f9ba-e294-213b-23540b9407e4",
+					"label": "3a. Data Transfer Related Information",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "3e9cd1a4-1096-6c6f-8b83-471024027dab",
+							"label": "Data has already been transferred"
+						},
+						{
+							"id": "08f9539b-1457-5009-7318-63d55a9707cd",
+							"label": "Data will be transferred"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "66b57cf9-2d03-d02d-099e-b8114aa59a4e",
+					"label": "Purpose of data transfer:",
+					"type": "text",
+					"powerfeature": false
+				},
+				{
+					"id": "def85f52-ccaf-6398-1b37-03623ea32047",
+					"label": "Please update data transfer related information for each data object",
+					"type": "factsheet",
+					"powerfeature": true,
+					"settings": {
+						"fsSections": {
+							"section.information": {
+								"section": true,
+								"subsection.nameDescription": {
+									"selected": true,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.lifecycle": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.successors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.predecessors": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dependencies": {
+								"section": false,
+								"subsection.parents": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.children": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requires": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.requiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.projects": {
+								"section": false,
+								"subsection.factSheetsAffecting": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.businessSupport": {
+								"section": false,
+								"subsection.businessCriticalityFunctionalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.factSheetsSupported": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsSupported_": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.userGroups": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.dataManagement": {
+								"section": false,
+								"subsection.factSheetsCreatedModifiedRequiredBy": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsProvided": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								},
+								"subsection.factSheetsConsumed": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							},
+							"section.sourcing": {
+								"section": false,
+								"subsection.technicalSuitability": {
+									"selected": false,
+									"isRelation": false,
+									"tags": []
+								},
+								"subsection.itComponentsUsing": {
+									"selected": false,
+									"isRelation": true,
+									"tags": []
+								}
+							}
+						}
+					}
+				},
+				{
+					"id": "b1e5b7a4-ba78-6d43-4d2a-cb656ad7b9d2",
+					"label": "3b. Information about data recipients",
+					"type": "radio",
+					"options": [
+						{
+							"id": "e45cbd3a-6ce5-b59a-51e5-e57e06e77f8e",
+							"label": "Recipients reside inside the EU / EEA"
+						},
+						{
+							"id": "1a65c643-296b-300c-a1a0-056441b91268",
+							"label": "Recipients reside outside the EU / EEA"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "d5094b53-e175-c1da-affa-328c6de40f99",
+					"label": "3c. Categorize the Data Recipients",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "f083b404-7e1d-5097-b552-9d61cffdfb56",
+					"label": "3d. List the countries of Data Recipients",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "ef1fbe40-908d-373e-0d20-1e76b6d2664b",
+					"label": "3e. Legal Basis for Personal Data Transfer",
+					"type": "radio",
+					"options": [
+						{
+							"id": "7958f997-3e79-13b3-fa1e-9ece0c5b41fe",
+							"label": "Data Processing Acceptance Established"
+						},
+						{
+							"id": "deb2ffb7-a6b3-1482-58f4-6ca1a311ca90",
+							"label": "Data Processing Acceptance is NOT Established"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "ae4dbd29-c5f3-e852-dcca-2519911b7620",
+					"label": "If \"Not\" established is there an alternative legal basis for data transfer?",
+					"type": "textarea",
+					"powerfeature": false,
+					"settings": {
+						"isConditional": true,
+						"dependency": {
+							"parentId": "ef1fbe40-908d-373e-0d20-1e76b6d2664b",
+							"condition": {
+								"op": "||",
+								"args": [
+									{
+										"op": "contains",
+										"args": [
+											[
+												0
+											],
+											"NOT"
+										]
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "99b36b25-6827-c768-55da-6988cacd6322",
+			"label": "5. Organizational and technical measures",
+			"type": "group",
+			"children": [
+				{
+					"id": "beb7ad89-3c79-d137-9e43-0b010db88a31",
+					"label": "User - Data Access Rights (example; who, what when, etc)",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "b928a9ec-339e-9139-9ffb-b9e4f8229a46",
+					"label": "User Access Control (example; Authentication via password control, screen lock time, different access rights hierarchy)",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "9efd5edd-9ceb-6d0f-025e-75a43cdadd1c",
+					"label": "Data Transmission Control (example; data encryption, logging)",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "5fcbfc54-0ac7-be02-8160-cdbba57fa8b5",
+					"label": "Hardware Access Control (example; secured rooms, safety lockers)",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "790e85d9-cd04-fcbd-a420-69d26f878bc3",
+					"label": "Availability Control (example; backups)",
+					"type": "textarea",
+					"powerfeature": false
+				},
+				{
+					"id": "29736cb2-af68-1140-62fb-23ba13fbd13e",
+					"label": "6. Other Comments",
+					"type": "textarea",
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		}
+	],
+	"factSheetType": "Application"
+}
