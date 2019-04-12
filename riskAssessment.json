@@ -1,0 +1,650 @@
+{
+	"title": "Business Impact Risk Assessment",
+	"questions": [
+		{
+			"id": "abe21ac0-a0d2-0742-c92a-3e456e1ded6a",
+			"label": "1. Please review the Business Support of this Application",
+			"type": "factsheet",
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"fsSections": {
+					"section.information": {
+						"section": false,
+						"subsection.nameDescription": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.acl": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.lifecycle": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.successors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.predecessors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dependencies": {
+						"section": false,
+						"subsection.parents": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.children": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.projects": {
+						"section": false,
+						"subsection.factSheetsAffecting": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.businessSupport": {
+						"section": true,
+						"subsection.businessCriticalityFunctionalSuitability": {
+							"selected": true,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.factSheetsSupported": {
+							"selected": true,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsSupported_": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.userGroups": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dataManagement": {
+						"section": false,
+						"subsection.factSheetsCreatedModifiedRequiredBy": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsProvided": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsConsumed": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.sourcing": {
+						"section": false,
+						"subsection.technicalSuitability": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.itComponentsUsing": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "5fb54b37-f00d-8dbe-8c69-2534ac8a0420",
+			"label": "2. In order to consider the Business Risk -&nbsp;(The exposure a company or organization has to factor(s) that will lower its profits or lead it to fail), please rate the following business risk factors for the Application at hand:",
+			"type": "group",
+			"children": [
+				{
+					"id": "74935262-a40a-bbab-8d72-dbd63768ac08",
+					"label": "2.1. Integration Impact of the Application",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "e7fdf22c-5702-50ef-7f09-8b5b87076b8c",
+							"label": "If the application goes down, it creates threat to human life"
+						},
+						{
+							"id": "c0fd4d51-7e95-442b-abe5-7bc281d9edbd",
+							"label": "This application is subject to any compliance audits (e.g PCI, HIPAA etc)?"
+						},
+						{
+							"id": "175ae34d-0835-5e2a-2190-ad0bbd06f484",
+							"label": "The application is designed to aid Top Management or Board Members in decision making? (E.g. CEO, CIO, CTO, CISO, CFO, Board of Directors etc)"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "6f147eff-f954-2c41-6648-f5f7670baee0",
+					"label": "2.2. Financial",
+					"type": "radio",
+					"options": [
+						{
+							"id": "137ae5a2-2cc7-d48c-b389-617e22b4c888",
+							"label": "Low Risk"
+						},
+						{
+							"id": "ced9efd5-86ff-10b8-b4ee-48f170cc109b",
+							"label": "Moderate Risk"
+						},
+						{
+							"id": "5572ee35-ef9e-0b05-d4b8-373380945bf0",
+							"label": "High Risk"
+						},
+						{
+							"id": "38947913-712f-51d5-93df-0e5535d0e8e9",
+							"label": "Severe Risk"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "be935f00-d4c9-aa1e-ada2-c0fd79b6e0b3",
+					"label": "2.3. Legal",
+					"type": "radio",
+					"options": [
+						{
+							"id": "94a4f1c0-5584-ad08-dad6-efb05b36537b",
+							"label": "Low Risk"
+						},
+						{
+							"id": "ded48723-c391-b137-f6c4-84c818fa364a",
+							"label": "Moderate Risk"
+						},
+						{
+							"id": "7bfb1fe5-2135-6d6e-dc8c-3656e65e72d2",
+							"label": "High Risk"
+						},
+						{
+							"id": "8413c195-8d89-3c7f-00f7-635c1545af5a",
+							"label": "Severe Risk"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "c1dc09be-720f-281b-0987-2f5db6aae5b6",
+					"label": "2.4. Operational",
+					"type": "radio",
+					"options": [
+						{
+							"id": "9dc6ada0-4bb2-b5e6-2b79-c60c822dba33",
+							"label": "Low Risk"
+						},
+						{
+							"id": "5fdf81e8-fd4f-f868-5f40-367fe7e2c8d3",
+							"label": "Moderate Risk"
+						},
+						{
+							"id": "51af8a45-7e11-87c5-218d-278b9a0cde29",
+							"label": "High Risk"
+						},
+						{
+							"id": "f9f0a9db-2e5c-77a6-ea5a-707998ae9d46",
+							"label": "Severe Risk"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "c8f67b59-a1e4-3778-aff4-cbf709513502",
+					"label": "2.5. Marketing",
+					"type": "radio",
+					"options": [
+						{
+							"id": "dda1a001-df28-5319-3cc1-4b45fa862cc2",
+							"label": "Low Risk"
+						},
+						{
+							"id": "8c457120-ffd8-8567-d552-22f82b47f136",
+							"label": "Moderate Risk"
+						},
+						{
+							"id": "4d40b968-b75e-2c0f-3373-50fd19916103",
+							"label": "High Risk"
+						},
+						{
+							"id": "7bf3bc99-79fd-65ad-d11d-b4fd8c634be5",
+							"label": "Severe Risk"
+						}
+					],
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "51631043-c9e6-4d45-8a01-92f296316edd",
+			"label": "3.1. Please review the Data Objects which are processed by this Application",
+			"type": "factsheet",
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"fsSections": {
+					"section.information": {
+						"section": false,
+						"subsection.nameDescription": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.acl": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.lifecycle": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.successors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.predecessors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dependencies": {
+						"section": false,
+						"subsection.parents": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.children": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.projects": {
+						"section": false,
+						"subsection.factSheetsAffecting": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.businessSupport": {
+						"section": false,
+						"subsection.businessCriticalityFunctionalSuitability": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.factSheetsSupported": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsSupported_": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.userGroups": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dataManagement": {
+						"section": true,
+						"subsection.factSheetsCreatedModifiedRequiredBy": {
+							"selected": true,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsProvided": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsConsumed": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.sourcing": {
+						"section": false,
+						"subsection.technicalSuitability": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.itComponentsUsing": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "d6cd8912-d48a-e563-b3c2-d6a6470d9af1",
+			"label": "3.2. The data objects which are processed by this application have an average confidentiality rating of...",
+			"type": "radio",
+			"options": [
+				{
+					"id": "263de2fc-4007-893c-34ce-ef8573c9f2ca",
+					"label": "1"
+				},
+				{
+					"id": "a26a0957-565f-b91e-9259-695c455d28be",
+					"label": "greater than 1 but less than 2"
+				},
+				{
+					"id": "ecbefb81-8f35-2f05-de32-d0311cbc79a2",
+					"label": "greater than 2 but less than 3"
+				},
+				{
+					"id": "04bfeaf7-d072-3a72-3cea-bbfc9cdb1a4d",
+					"label": "greater than 3 but less than 4"
+				},
+				{
+					"id": "f76c36fc-609a-4075-66b3-cd7f5f49c6b6",
+					"label": "4"
+				}
+			],
+			"powerfeature": false
+		},
+		{
+			"id": "b5580a57-f6ee-33cc-b369-c1eaa8ac6de4",
+			"label": "4. Please rate the following information risk factors:",
+			"type": "group",
+			"children": [
+				{
+					"id": "89ffcca9-f682-7ced-7972-0b40ca5bfa58",
+					"label": "4.1. Availability of Data (Ensuring timely and reliable access to and use of information):&nbsp;The disruption of access to or use of information or an information system could be expected to have the following adverse effect on organizational operations, organizational assets, or individuals.",
+					"type": "radio",
+					"options": [
+						{
+							"id": "adb91872-9f9f-b757-3af3-31b39bd1c08b",
+							"label": "Limited"
+						},
+						{
+							"id": "ae82cebd-0828-fd58-8654-61e338e037be",
+							"label": "Serious"
+						},
+						{
+							"id": "4e1f6484-46b4-8331-522b-a40fe103393e",
+							"label": "Severe"
+						},
+						{
+							"id": "c41264eb-21bf-28bd-752d-61618516d26d",
+							"label": "Catastrophic"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "a20f179f-1aa9-d2e9-4b37-98eb64974056",
+					"label": "4.2. Integrity of Data (Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity):&nbsp;The unauthorized modification or destruction of information could be expected to have the following adverse effect on organizational operations, organizational assets, or individuals",
+					"type": "radio",
+					"options": [
+						{
+							"id": "268c6871-2ef6-c0f6-203e-5c5f9c67d79c",
+							"label": "Limited"
+						},
+						{
+							"id": "bfe238a2-83ca-6fb6-c5a4-04f97dbf3b94",
+							"label": "Serious"
+						},
+						{
+							"id": "14f0ffdf-e706-20d9-19f9-124256760241",
+							"label": "Severe"
+						},
+						{
+							"id": "c91033f2-d703-e9d3-aa5e-4c9956bd2b81",
+							"label": "Catastrophic"
+						}
+					],
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "286fb363-936d-8b73-529f-1312b5f9489d",
+			"label": "5.1. Please classify the technical fitness of this Application",
+			"type": "factsheet",
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"fsSections": {
+					"section.information": {
+						"section": false,
+						"subsection.nameDescription": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.acl": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.lifecycle": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.successors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.predecessors": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dependencies": {
+						"section": false,
+						"subsection.parents": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.children": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.projects": {
+						"section": false,
+						"subsection.factSheetsAffecting": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.businessSupport": {
+						"section": false,
+						"subsection.businessCriticalityFunctionalSuitability": {
+							"selected": false,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.factSheetsSupported": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsSupported_": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.userGroups": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.dataManagement": {
+						"section": false,
+						"subsection.factSheetsCreatedModifiedRequiredBy": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsProvided": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						},
+						"subsection.factSheetsConsumed": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					},
+					"section.sourcing": {
+						"section": true,
+						"subsection.technicalSuitability": {
+							"selected": true,
+							"isRelation": false,
+							"tags": []
+						},
+						"subsection.itComponentsUsing": {
+							"selected": false,
+							"isRelation": true,
+							"tags": []
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "c9d465ab-56fe-8f9c-c843-f953941c6ca4",
+			"label": "5.2. Please rate the following technical risk factors:",
+			"type": "group",
+			"children": [
+				{
+					"id": "951efb5e-ea1c-6b33-1923-e8dd2aaa3dc9",
+					"label": "5.2.1. Availability of the Application",
+					"type": "radio",
+					"options": [
+						{
+							"id": "babc4522-636b-6a2b-a2b9-c230e658be9d",
+							"label": "100%"
+						},
+						{
+							"id": "9518c25b-ed4a-6d60-6e0b-2a5b0d3b3e21",
+							"label": "99.99%"
+						},
+						{
+							"id": "13c98272-c9cb-8258-eef7-36435135336e",
+							"label": "95%-99.99%"
+						},
+						{
+							"id": "22d2b5cb-ecb8-c8b0-15dd-3ed76275c186",
+							"label": "90%-94.99%"
+						},
+						{
+							"id": "6933c9a8-aa6a-fabf-6468-c2749b049d09",
+							"label": "less than 89.99%"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "1fe691ed-b557-925f-3c1b-b810113f06de",
+					"label": "5.2.2. Performance of the Application",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "d19607ce-5a23-bc6b-ea1c-4b10c2ad3b63",
+							"label": "Concurrent Users impact the performance of this application drastically"
+						},
+						{
+							"id": "728d5c39-7d3c-e16a-0bda-25451d9609b1",
+							"label": "Server Response Time results in severe performance issues"
+						},
+						{
+							"id": "ae7e449a-013d-34b1-2c7b-c6ca22786c29",
+							"label": "Render Response Time impacts the usability of the application"
+						}
+					],
+					"powerfeature": false
+				},
+				{
+					"id": "8c3e2718-f756-b528-a02f-de53a172d40c",
+					"label": "5.2.3. Security Compliance",
+					"type": "checkbox",
+					"options": [
+						{
+							"id": "077ec2c6-5356-7fc3-6da7-ae6992604633",
+							"label": "A security evaluation has been performed for the software"
+						},
+						{
+							"id": "1303729b-a6f4-3161-cb0e-695a05460b9a",
+							"label": "Security requirements have been established for the software"
+						},
+						{
+							"id": "0ce94a54-2f8e-23e3-273f-f8f8221148f1",
+							"label": "Each software review, or audit, includes an evaluation of the security requirements"
+						},
+						{
+							"id": "db648b70-9dd1-a12c-8681-ff23d11b1906",
+							"label": "A&nbsp;configuration management&nbsp;and&nbsp;corrective action&nbsp;process is in place"
+						},
+						{
+							"id": "75f6d785-f718-9e2c-c9ab-2708c034efe2",
+							"label": "Physical security for the software is adequate"
+						}
+					],
+					"powerfeature": false
+				}
+			],
+			"powerfeature": true
+		},
+		{
+			"id": "026fca4a-8eda-2b50-c2ff-51a9c0dad201",
+			"label": "Risk calculation",
+			"type": "calc",
+			"powerfeature": true,
+			"settings": {
+				"version": 1,
+				"formula": "// Enter any JavaScript code to calculate a value based on the user's responses\n// saved in the 'answers' object and return that value at the end. The response to\n// any single questions can be accessed either by the question's index or label text.\n// (Hidden questions and Fact Sheet questions are always present in the array with the\n// value 'null'. Questions groups have no impact on the answers array whatsoever.)\n// The following example is based on the availability demo survey:\n\n\nvar score = 0;\n\nscore += answers[1].includes('If the application goes down, it creates threat to human life') ? 40 : 0;\nscore += answers[1].includes('This application is subject to any compliance audits (e.g PCI, HIPAA etc)?') ? 40 : 0;\nscore += answers[1].includes('The application is designed to aid Top Management or Board Members in decision making? (E.g. CEO, CIO, CTO, CISO, CFO, Board of Directors etc)') ? 40 : 0;\n//score += answers[0] === 'This application is subject to any compliance audits (e.g PCI, HIPAA etc)?' ? 20 : 0;\n//score += answers[0] === 'The application is designed to aid Top Management or Board Members in decision making? (E.g. CEO, CIO, CTO, CISO, CFO, Board of Directors etc)' ? 30 : 0;\n//score += answers[0] === 'If the application goes down, it creates threat to human life' && 'This application is subject to any compliance audits (e.g PCI, HIPAA etc)?' ? 40 : 0;\n//score += answers[0] === 'If the application goes down, it creates threat to human life' && 'The application is designed to aid Top Management or Board Members in decision making? (E.g. CEO, CIO, CTO, CISO, CFO, Board of Directors etc)' ? 40 : 0;\n\n\nscore += answers[2] === 'Low Risk' ? 10 : 0;\nscore += answers[2] === 'Moderate Risk' ? 20 : 0;\nscore += answers[2] === 'High Risk' ? 30 : 0;\nscore += answers[2] === 'Severe Risk' ? 40 : 0;\n\nscore += answers[3] === 'Low Risk' ? 10 : 0;\nscore += answers[3] === 'Moderate Risk' ? 20 : 0;\nscore += answers[3] === 'High Risk' ? 30 : 0;\nscore += answers[3] === 'Severe Risk' ? 40 : 0;\n\nscore += answers[4] === 'Low Risk' ? 10 : 0;\nscore += answers[4] === 'Moderate Risk' ? 20 : 0;\nscore += answers[4] === 'High Risk' ? 30 : 0;\nscore += answers[4] === 'Severe Risk' ? 40 : 0;\n\nscore += answers[5] === 'Low Risk' ? 10 : 0;\nscore += answers[5] === 'Moderate Risk' ? 20 : 0;\nscore += answers[5] === 'High Risk' ? 30 : 0;\nscore += answers[5] === 'Severe Risk' ? 40 : 0;\n\nscore += answers[7] === '1' ? 10 : 0;\nscore += answers[7] === 'greater than 1 but less than 2' ? 20 : 0;\nscore += answers[7] === 'greater than 2 but less than 3' ? 30 : 0;\nscore += answers[7] === 'greater than 3 but less than 4' ? 40 : 0;\nscore += answers[7] === '4' ? 50 : 0;\n\nscore += answers[8] === 'Limited' ? 10 : 0;\nscore += answers[8] === 'Serious' ? 20 : 0;\nscore += answers[8] === 'Severe' ? 30 : 0;\nscore += answers[8] === 'Catastrophic' ? 40 : 0;\n\nscore += answers[9] === 'Limited' ? 10 : 0;\nscore += answers[9] === 'Serious' ? 20 : 0;\nscore += answers[9] === 'Severe' ? 30 : 0;\nscore += answers[9] === 'Catastrophic' ? 40 : 0;\n\nscore += answers[11] === '100%' ? 0 : 0;\nscore += answers[11] === '99.99%' ? 10 : 0;\nscore += answers[11] === '95%-99.99%' ? 20 : 0;\nscore += answers[11] === '90%-94.99%' ? 30 : 0;\nscore += answers[11] === 'less than 89.99%' ? 40 : 0;\n\nscore += answers[12].includes('Concurrent Users impact the performance of this application drastically') ? 10 : 0;\nscore += answers[12].includes('Server Response Time results in severe performance issues') ? 10 : 0;\nscore += answers[12].includes('Render Response Time impacts the usability of the application') ? 10 : 0;\n\nscore += answers[13].includes('A security evaluation has been performed for the software') ? 0 : +10;\nscore += answers[13].includes('Security requirements have been established for the software') ? 0 : +10;\nscore += answers[13].includes('Each software review, or audit, includes an evaluation of the security requirements') ? 0 : +10;\nscore += answers[13].includes('A configuration management and corrective action process is in place') ? 0 : +10;\nscore += answers[13].includes('Physical security for the software is adequate') ? 0 : +10;\n\n//score += 5 - answers['Which channels of communication did you use to inform your users about availability issues?'].length;\n//score += /crucial customer/i.test(answers[4]) ? 50 : 0;\n\nreturn score + '\\nIf the risk score is less than 110 then this factsheet can be tagged as low risk. If it is greater than 110 but less than 250 it can be tagged as medium risk. If it is greater than 200 but less than 310 it can be tagged as high risk. Finally, if it is greater than 310 it can be tagged as severe risk!';\n\n\n"
+			}
+		}
+	],
+	"factSheetType": "Application"
+}
